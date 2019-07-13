@@ -32,9 +32,23 @@ console.log(person.age)
 person.greet()
 
 const hobbies = ['Sports', 'Cooking'];
-for(let hobby of hobbies){
-    console.log(hobby);
+// for(let hobby of hobbies){
+//     console.log(hobby);
+// }
+
+// console.log(hobbies.map(hobby => "Hobby: " + hobby));
+// console.log(hobbies)
+
+//Spread
+const copiedArray = hobbies.slice();
+console.log(copiedArray);
+
+//Spread is a method that will pull all the properties of an array or object and basically pull it out.
+const newCopiedArray = [...hobbies];
+console.log(newCopiedArray)
+
+const toArray = (...args) => {
+    return args;
 }
 
-console.log(hobbies.map(hobby => "Hobby: " + hobby));
-console.log(hobbies)
+console.log(toArray(1, 2, 3, 4));
