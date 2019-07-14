@@ -12,6 +12,8 @@ const http = require('http');
 //Event driven.
 const server = http.createServer((req, res) =>{
     console.log(req);
+    //Process exit is a hard exit of code.
+    // process.exit();
 });
 
 //Listen for incoming request. Defaults to port 80.
