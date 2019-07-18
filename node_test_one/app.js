@@ -1,3 +1,4 @@
+
 //Creating a server.
 // Importing http from global Node.
 const http = require('http');
@@ -18,4 +19,3 @@ const server = http.createServer(routes.handler);
 
 //Listen for incoming request. Defaults to port 80.
 server.listen(3000);
-
