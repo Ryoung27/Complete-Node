@@ -8,6 +8,7 @@ const p = path.join(
 );
 
 const getProductsFromFile = cb => {
+  this.id = Math.random().toString();
   fs.readFile(p, (err, fileContent) => {
     if (err) {
       cb([]);
